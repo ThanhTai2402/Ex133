@@ -1,0 +1,121 @@
+[
+  {
+    "title": "Elegant Dress",
+    "details": "A beautiful and elegant dress suitable for special occasions.",
+    "thumbnail": "elegant_dress.jpg",
+    "style": "Formal",
+    "creationDate": "2023-01-01T12:00:00Z"
+  },
+  {
+    "title": "Business Suit",
+    "details": "A classic business suit for a professional look.",
+    "thumbnail": "business_suit.jpg",
+    "style": "Formal",
+    "creationDate": "2023-05-05T14:20:00Z"
+  },
+  {
+    "title": "Evening Gown",
+    "details": "A glamorous evening gown for special events.",
+    "thumbnail": "evening_gown.jpg",
+    "style": "Formal",
+    "creationDate": "2023-06-10T19:30:00Z"
+  },
+  {
+    "title": "Classic Tuxedo",
+    "details": "A timeless classic tuxedo for formal occasions.",
+    "thumbnail": "classic_tuxedo.jpg",
+    "style": "Formal",
+    "creationDate": "2023-07-20T18:15:00Z"
+  },
+  {
+    "title": "Chic Blazer",
+    "details": "A chic blazer that adds style to your outfit.",
+    "thumbnail": "chic_blazer.jpg",
+    "style": "Formal",
+    "creationDate": "2023-08-30T11:45:00Z"
+  },
+  {
+    "title": "Casual Jeans",
+    "details": "Comfortable and stylish jeans for everyday wear.",
+    "thumbnail": "casual_jeans.jpg",
+    "style": "Casual",
+    "creationDate": "2023-02-15T09:30:00Z"
+  },
+  {
+    "title": "Graphic T-Shirt",
+    "details": "A trendy graphic t-shirt for a casual look.",
+    "thumbnail": "graphic_tshirt.jpg",
+    "style": "Casual",
+    "creationDate": "2023-03-01T14:00:00Z"
+  },
+  {
+    "title": "Denim Jacket",
+    "details": "A stylish denim jacket perfect for cool evenings.",
+    "thumbnail": "denim_jacket.jpg",
+    "style": "Casual",
+    "creationDate": "2023-04-05T17:45:00Z"
+  },
+  {
+    "title": "Sneakers",
+    "details": "Comfortable sneakers for a laid-back style.",
+    "thumbnail": "sneakers.jpg",
+    "style": "Casual",
+    "creationDate": "2023-05-15T10:30:00Z"
+  },
+  {
+    "title": "Sporty Tracksuit",
+    "details": "A sporty tracksuit for your active lifestyle.",
+    "thumbnail": "sporty_tracksuit.jpg",
+    "style": "Sportswear",
+    "creationDate": "2023-03-20T15:45:00Z"
+  },
+  {
+    "title": "Running Shoes",
+    "details": "High-performance running shoes for athletes.",
+    "thumbnail": "running_shoes.jpg",
+    "style": "Sportswear",
+    "creationDate": "2023-04-25T08:20:00Z"
+  },
+  {
+    "title": "Yoga Leggings",
+    "details": "Comfortable and stretchy leggings for yoga sessions.",
+    "thumbnail": "yoga_leggings.jpg",
+    "style": "Sportswear",
+    "creationDate": "2023-06-05T12:10:00Z"
+  },
+  {
+    "title": "Basketball Jersey",
+    "details": "A stylish basketball jersey for the court.",
+    "thumbnail": "basketball_jersey.jpg",
+    "style": "Sportswear",
+    "creationDate": "2023-07-10T16:30:00Z"
+  },
+  {
+    "title": "Bohemian Skirt",
+    "details": "A bohemian-style skirt with vibrant patterns and colors.",
+    "thumbnail": "bohemian_skirt.jpg",
+    "style": "Bohemian",
+    "creationDate": "2023-04-10T08:00:00Z"
+  },
+  {
+    "title": "Embroidered Blouse",
+    "details": "An embroidered blouse with bohemian flair.",
+    "thumbnail": "embroidered_blouse.jpg",
+    "style": "Bohemian",
+    "creationDate": "2023-05-20T14:45:00Z"
+  },
+  {
+    "title": "Wide-Leg Pants",
+    "details": "Stylish wide-leg pants for a boho-chic look.",
+    "thumbnail": "wide_leg_pants.jpg",
+    "style": "Bohemian",
+    "creationDate": "2023-06-30T11:00:00Z"
+  },
+  {
+    "title": "Feather Headband",
+    "details": "A feather headband to complete your bohemian style.",
+    "thumbnail": "feather_headband.jpg",
+    "style": "Bohemian",
+    "creationDate": "2023-08-15T13:20:00Z"
+  }
+]

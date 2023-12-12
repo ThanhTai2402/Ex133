@@ -1,0 +1,108 @@
+{{errMessage}}
+<br/>
+
+Fashion Id: <input type="text" #fashionId>
+<button (click)="searchFashion(fashionId.value)">Search</button>
+<button (click)="closeDetails()">Close</button>
+<div class="fashion-details" *ngIf="showDetails">
+    <table>
+        <tr>
+          <td>Fashion ID:</td>  
+          <td>{{fashion._id}}</td>
+        </tr>
+        <tr>
+          <td>Fashion subject:</td>
+          <td>{{fashion.title}}</td>
+        </tr>
+        <tr>
+          <td>Fashion detail:</td>
+          <td>{{fashion.details}} </td>
+        </tr>
+        <tr>
+          <td>Fashion style:</td>
+          <td>{{fashion.style}}</td>
+        </tr>
+        <tr>
+          <td>Creation Date:</td>
+          <td>{{fashion.creationDate | date:'mediumDate'}}</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <img src="{{fashion.thumbnail}}" width="100px" height="100px">
+          </td>
+        </tr>
+    </table>
+</div> 
+<br> <button type="button" class="btn px-0 text-primary" (click)="New()">Create New</button>
+<div class="create" *ngIf="showCreate">
+    <table>
+      <tr>
+        <td>Fashion title:</td>
+        <td>
+          <input type="text" class="form-control" #name="ngModel" name="FashionTitle" id="FashionTitle" placeholder="Enter fashion title" [(ngModel)]="fashion.title" required />
+        </td>
+      </tr>
+      <tr>
+        <td>Fashion details:</td>
+        <td>
+          <textarea class="form-control" rows="3" placeholder="Enter fashion details" [(ngModel)]="fashion.details"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Thumbnail:</td>
+        <td>
+          <input type="text" class="form-control" #name="ngModel" name="Thumbnail" id="Thumbnail" placeholder="Enter thumbnail URL" [(ngModel)]="fashion.thumbnail" (change)="onFileSelected($event,fashion)" />
+        </td>
+      </tr>
+      <tr>
+        <td>Fashion's Style:</td>
+        <td>
+          <input type="text" class="form-control" #name="ngModel" name="FashionStyle" id="FashionStyle" placeholder="Enter fashion style" [(ngModel)]="fashion.style" />
+        </td>
+      </tr>
+      <tr>
+        <td>Creation Date:</td>
+        <td>
+          <input type="date" class="form-control" #name="ngModel" name="CreationDate" id="CreationDate" placeholder="Enter creation date" [(ngModel)]="fashion.creationDate" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button (click)="postFashion()">Tạo mới</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+
+  
+
+
+
+<table border="1">
+  <tr>
+    <td>Id</td>
+    <td>Fashion Title</td>
+    <td>Fashion Detail</td>
+    <td>Thumbnail</td>
+    <td>Style</td>
+    <td>Creation Date</td>
+  </tr>
+  <tbody>
+    <tr *ngFor="let fashion of fashions">
+      <td>{{ fashion._id }}</td>
+      <td>{{ fashion.title }}</td>
+      <td>{{ fashion.details }} </td>
+      <td>
+        <img src="{{ fashion.thumbnail }}" width="100px" height="100px">
+      </td>
+      <td>{{ fashion.style }}</td>
+      <td>{{ fashion.creationDate | date:'medium' }}</td>
+      <td>
+        <div class="menu">
+            <span (click)="deleteFashion(fashion._id)">Delete</span> |
+        </div>
+    </td>
+    </tr>
+  </tbody>
+</table>
