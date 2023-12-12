@@ -28,7 +28,7 @@ export class FashionComponent {
   searchFashion(Id:string)
   {
     this._service.getFashion(Id).subscribe({
-      next:(data)=>{this.fashions=data},
+      next:(data)=>{this.fashion=data},
       error:(err)=>{this.errMessage=err}
     })
     this.showDetails = true
