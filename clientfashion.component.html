@@ -1,0 +1,36 @@
+<h3 class="text-center text-black bg-success p-3">Fashion Style</h3>
+
+{{errMessage}}
+
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <select class="form-select" [(ngModel)]="style">
+        <option value="All Style">All Style</option>
+        <option *ngFor="let s of styles">{{ s }}</option>
+      </select>
+    </div>
+    <div class="col">
+      <button class="btn btn-primary w-100" (click)="fashionsByStyle(style)">Get Fashions</button>
+    </div>
+  </div>
+
+  <div class="container w-80">
+    <div class="row" *ngFor="let s of styles">
+      <h4 class="text-center text-white bg-secondary p-3 mt-5">{{s}}</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-4" *ngFor="let fashion of tempFashionsByStyle(s)">
+            <div class="card" style="width: 18rem;" *ngIf="fashion.style === s" (click)="detailFashion1(fashion._id)">
+              <img src="{{fashion.thumbnail}}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">{{fashion.title}}</h5>
+                <!-- <p class="card-text">{{fashion.fashion_detail}}</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
